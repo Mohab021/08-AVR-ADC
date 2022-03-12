@@ -19,7 +19,7 @@ int main(void)
 		x = ADC_Read(0); //read ADC value at PA0	
 		x = (x * 5) / (1023);
 		itoa(x, int_buffer, 10); //for printing Int, 10 for decimal output (as a string)
-		LCD_Print(int_buffer);
+		LCD_Print_xy(0, 0, int_buffer);
 		_delay_ms(1000);
 	}
 }
